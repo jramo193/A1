@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     
                     //populate the additional company info
                     const img = document.createElement("img");
-                    img.setAttribute("src", "A1/images/logos/"+myData.symbol+".svg");
+                    img.setAttribute("src", "/A1/images/logos/"+myData.symbol+".svg");
                     img.setAttribute("id", "logo");
                     document.querySelector("#companyLogo").innerHTML = "";
                     document.querySelector("#companyLogo").appendChild(img);
