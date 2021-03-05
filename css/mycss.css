@@ -1,0 +1,341 @@
+body {
+    margin: 40px;
+    background-color: black;
+    background-image: url(/images/background.PNG); 
+/*    https://www.wallpapertip.com/wmimgs/42-423017_money-background-fill-dollar-sign-black-background-gold.jpg*/
+    background-repeat: repeat;
+    font-family: Open Sans, sans-serif;
+    font-size: 0.8rem;
+}
+
+.container {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  color: #444;
+    
+}
+
+.box {
+  background-color: #131722;
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  border-style: solid;
+  border-color: white;
+    
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cInfo {
+    font-size: 15px;
+}
+
+
+img {
+    max-width: 300px;
+}
+
+h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.a {
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 1;
+}
+
+.b {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 7;
+    color: white;
+}
+
+.b ul{
+  height:760px; 
+  width: 90%;
+  overflow: hidden;
+  overflow-y:scroll;
+}
+
+ul#listOfCompanies li{
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.c {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 4;
+  position: relative;
+    color: white;
+}
+
+.d {
+  grid-column: 4 / span 2;
+  grid-row: 2 / span 6;
+    color: white;
+}
+
+.e {
+  grid-column: 2 / span 2;
+  grid-row: 6 / span 3;
+    color: white;
+}
+
+.f {
+  grid-column: 4 / span 2;
+  grid-row: 8 / span 1;
+    color: white;
+}
+
+.g {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 7;
+  max-height: 935px;
+    color: white;
+}
+
+.h {
+  grid-column: 4 / span 2;
+  grid-row: 2 / span 4;
+    color: white;
+}
+
+.i {
+  grid-column: 4 / span 2;
+  grid-row: 6 / span 3;
+    color: white;
+}
+
+div.a {
+    display: block;	   
+    position: relative;  
+    display: inline;
+}
+
+div.b {
+    display: block;	   
+    position: relative;  
+}
+
+div.c {
+    display: block;    
+    position: relative;
+}
+
+div.d {
+    display: block;    
+    position: relative;
+}
+
+div.e {
+    display: block;    
+    position: relative;
+}
+
+
+div.f {
+    display: block;    
+    position: relative;
+}
+
+div.g {
+    display: none;    
+    position: relative;
+}
+
+div.h {
+    display: none;     
+    position: relative;
+}
+
+div.i {
+    display: none;    
+    position: relative;
+}
+
+canvas{
+    position: relative;
+    width: 1050px !important;
+    height: 400px !important;
+
+}
+
+
+#viewCharts {
+    position: absolute;
+    right: 10%;
+    top: 6%;
+}
+
+
+#go {
+    position: absolute;
+    left: 22%;
+    top: 15%;
+}
+
+#clear {
+    position: absolute;
+    left: 33%;
+    top: 15%;
+}
+
+#backToMain {
+    position: absolute;
+    right: 45%;
+    top: 90%;
+
+}
+
+#speak {
+    position: absolute;
+    right: 10%;
+    top: 21%;
+}
+
+#stockDataTableHeader {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#stockDataTable {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    font-size: 9px;
+    table-layout: fixed;
+    text-align: center;
+}
+
+#stockDataDiv {
+    max-height:650px;
+    overflow:auto;
+    overflow-y: scroll;
+}
+
+#stockDataTableRow {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#financialsTableHeader {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#financialsDataTable {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.rowHeader{
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.additionalCalcs {
+
+}
+
+.stockHeader {
+    cursor: pointer;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    font-size: 12px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#companyLogo {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 175px;
+    height: 175px;
+}
+
+#logo {
+    max-height:100%; 
+    max-width:100%;
+}
+
+.header {
+    display: inline-block;
+}
+
+#credits {
+    float: right;
+}
+
+#loader1 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+#loader2 {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+
+/* CSS Loader source: https://loading.io/css/ */
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #cdd422;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #c2dde6 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>  
+    <title>COMP 3512 Assign1</title>   
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/mycss.css">
+</head>
+<body>
+    
+    
+<main class="container">
+    <div class="box a">
+        <section>
+            <h2 class="header" id="titleHeader">COMP 3512 Assign1</h2>
+            <h2 class="header" id="credits">Credits</h2>
+        </section>  
+    </div>
+    <div class="box b">
+        <section>
+            <h2>List of Companies</h2>
+            <label>Filter:</label>
+            <input type="text" id="filterCompany" placeholder="Filter out companies..."><br/>
+            <button type="button" id="go" class="filterButton">Go</button>
+            <button type="button" id="clear" class="filterButton">Clear</button><br/>
+            <div id="loader1" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            <ul id="listOfCompanies"></ul>
+            
+        </section>  	
+    </div>
+    <div class="box c">
+        <section>
+            <h2>Company Information</h2>  
+            <label></label>
+            <label>Symbol:</label>
+            <span class="cInfo" id="companySymbol"></span><br/>        
+            <label>Name:</label>
+            <span class="cInfo" id="companyName"></span><br/>   
+            <label>Sector:</label>
+            <span class="cInfo"id="companySector"></span><br/>  
+            <label>Subindustry:</label>
+            <span class="cInfo" id="companySubindustry"></span><br/>          
+            <label>Address:</label>
+            <span class="cInfo" id="companyAddress"></span><br/>          
+            <label>Website:</label>
+            <span><a href="" id="companyWebsite"></a></span><br/>          
+            <label>Exchange:</label>
+            <span class="cInfo" id="companyExchange"></span><br/><br/>           
+            <label>Description:</label><br/><br/>
+            <span class="cInfo" id="companyDescription"></span>
+            <span class="cInfo" id="companyLogo"></span><br/>          
+            
+        </section>  
+    </div>
+    <div class="box d">
+        <section>
+            <h2>Stock Data</h2>
+            <table id="stockDataTableHeader">
+                    <tr>
+                        <th class="stockHeader" id="date">Date</th>            
+                        <th class="stockHeader" id="open">Open</th>
+                        <th class="stockHeader" id="close">Close</th>
+                        <th class="stockHeader" id="low">Low</th>
+                        <th class="stockHeader" id="high">High</th>
+                        <th class="stockHeader" id="volume">Volume</th>
+                    </tr>    
+            </table>
+            <button type="button" id="viewCharts">View Charts</button>
+            <div id="loader2" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            <div id="stockDataDiv"> 
+                <table id="stockDataTable"></table>
+                
+            </div>
+  
+        </section>  	
+    </div>
+    <div class="box e" id="map">
+        <section>
+            <h2>Map</h2>
+        </section>  	
+    </div>
+    <div class="box f">
+        <section>
+            <table id="stockDataTableRow">
+                    <tr id="average">
+                        <td class="rowHeader">Average</td>
+                        <td class="additionalCalcs" id="openAverageData"></td>
+                        <td class="additionalCalcs" id="closeAverageData"></td>
+                        <td class="additionalCalcs" id="lowAverageData"></td>
+                        <td class="additionalCalcs" id="highAverageData"></td>
+                        <td class="additionalCalcs" id="volumeAverageData"></td>
+                    </tr >    
+                    <tr id="min">
+                        <td class="rowHeader">Min</td>
+                        <td class="additionalCalcs" id="openMinData"></td>
+                        <td class="additionalCalcs" id="closeMinData"></td>
+                        <td class="additionalCalcs" id="lowMinData"></td>
+                        <td class="additionalCalcs" id="highMinData"></td>
+                        <td class="additionalCalcs" id="volumeMinData"></td>
+                    </tr>  
+                    <tr id="max">
+                        <td class="rowHeader">Max</td>
+                        <td class="additionalCalcs" id="openMaxData"></td>
+                        <td class="additionalCalcs" id="closeMaxData"></td>
+                        <td class="additionalCalcs" id="lowMaxData"></td>
+                        <td class="additionalCalcs" id="highMaxData"></td>
+                        <td class="additionalCalcs" id="volumeMaxData"></td>
+                    </tr>  
+            </table>  
+        </section>  	
+    </div>
+    <div class="box g">
+        <section>
+            <h2>Charts</h2>
+            <canvas id="chart1"></canvas><br/>
+            <canvas id="chart2"></canvas>    
+        </section>  	
+    </div>
+    <div class="box h">
+        <section>
+            <h2 id="companyNameSymbol"></h2>
+            <label>Description:</label><br/><br/>
+            <span id="companyDescription2"></span>
+            <div></div>
+            <button type="button" id="speak">Speak</button>
+            <button type="button" id="backToMain">Close</button>
+            <ul id="h"></ul>        
+        </section>  	
+    </div>
+    <div class="box i">
+        <section>
+            <h2>Financials</h2>  
+            <table id="financialsTableHeader">
+                    <tr>
+                        <th class="financialsHeader" id="year">Year</th>
+                        <th class="financialsHeader" id="revenue">Revenue</th>            
+                        <th class="financialsHeader" id="earnings">Earnings</th>
+                        <th class="financialsHeader" id="assets">Assets</th>
+                        <th class="financialsHeader" id="liabilities">Liabilities</th>
+                    </tr>    
+            </table>
+            <div id="financialsDataDiv"> 
+                <table id="financialsDataTable"></table>
+            </div>
+        </section>  	
+    </div>
+</main>    
+    
+<script src="js/myjs.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5lZ3QTZFYeBMb9Oh6OfWlGklx_BMW_Lw&callback=initMap"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+<!--<script src="js/chartjs-chart-financial-master/docs/chartjs-chart-financial.js" type="text/javascript"></script>-->
+</body>
+</html>
