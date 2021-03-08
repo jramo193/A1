@@ -47,7 +47,7 @@ function clearFilter() {
     textFilter();
 }
 
-//Extracted then modified from https://www.youtube.com/watch?v=Q_TplfrQlE0&ab_channel=doctorcode
+//text filter - extracted then modified from https://www.youtube.com/watch?v=Q_TplfrQlE0&ab_channel=doctorcode
 function textFilter() {
     var filterValue, input, ul, li, i;
     input = document.querySelector("#filterCompany");
@@ -66,7 +66,7 @@ function textFilter() {
     }
 }
 
-//Extracted then modified from https://codepen.io/andrese52/pen/ZJENqp
+//sort table - extracted then modified from https://codepen.io/andrese52/pen/ZJENqp
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("stockDataTable");
