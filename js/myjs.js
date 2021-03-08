@@ -31,11 +31,8 @@ const bigNumber = new Intl.NumberFormat();
 function displayCredits() {
     const creds = document.querySelector("#credits");
     creds.addEventListener('mouseenter', e => {
-        alert("It works!");
+        alert("Name: Jerik Ramos\nCourse: COMP 3512\n\nResources used:\n- Randy's APIs\n- Google Maps API\n- Chart.js\n- https://www.wallpapertip.com/wmimgs/42-423017_money-background-fill-dollar-sign-black-background-gold.jpg\n- https://loading.io/css\n- https://www.youtube.com/watch?v=Q_TplfrQlE0&ab_channel=doctorcode\n- https://codepen.io/andrese52/pen/ZJENqp\n\nPress ESC to close.");
     });
-    
-        let notification = new Notification("Credits", {body: "It works!"});
-        setTimeout(function() {notification.close()}, 5000);
 }
 
 //sort function helper
@@ -647,4 +644,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     } //setEventHandlers
 
-}); //preload
+}); //preload DOM
